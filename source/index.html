@@ -21,7 +21,7 @@
                 <li class="social__item social__item--inst"><a href="#"><span class="visually-hidden">Instagram</span></a></li>
                 <li class="social__item social__item--rss"><a href="#"></a></li>
             </ul>
-            <div class="language-change__wrapper">
+            <div class="contacts__wrapper">
                 <a class="language-change" href="#">eng</a>
                 <a class="contacts__phone" href="tel:8-800-500-67-27">8-800-500-67-27</a>
             </div>
@@ -29,8 +29,11 @@
         <!-- Main Navigation -->
         <section class="main-nav container">
             <h1 class="visually-hidden">Главное меню</h1>
-            <a class="logo main-nav__logo"><img src="img/header-logo.png" width="139" height="48" /></a>
-            <ul class="main-nav__list custom-list">
+            <div class="main-nav__wrapper">
+                <a class="logo main-nav__logo"><img src="img/header-logo.png" width="139" height="48" /></a>
+                <button class="main-nav__switch"></button>
+            </div>
+            <ul class="main-nav__list custom-list main-nav__list--closed">
                 <li class="main-nav__item main-nav__item--current"><a href="#">Продукты</a></li>
                 <li class="main-nav__item"><a href="#">События</a></li>
                 <li class="main-nav__item"><a href="#">О компании</a></li>
@@ -40,7 +43,6 @@
                 <li class="main-nav__item"><a href="#">Купить</a></li>
                 <li class="main-nav__item"><a href="#">Скачать</a></li>
             </ul>
-            <button class="main-nav__switch"></button>
         </section>        
      </header>
 
@@ -49,11 +51,11 @@
             <!-- Download -->
             <section class="download">
                 <h1 class="visually-hidden">Скачать</h1>
-                <img class="download__logo" src="img/download-logo.png" />
+                <img class="download__logo" src="img/download-logo.png" width="320" height="120"/>
                 <p class="download__text">проектируй в 3D с архитектурно-строительной BIM-системой</p>
                 <div class="download__wrapper">
                     <a class="download__button" href="#">Скачать</a>
-                    <a class="download__button--buy" href="#">Купить</a>
+                    <a class="download__buy-button" href="#">Купить</a>
                 </div>                
             </section>            
             <!-- Intro -->
@@ -63,8 +65,10 @@
                 </div>
                 <p class="intro__title">Renga Arhitecture</p>
                 <p class="intro__version">Версия: 2.12.15285 | <a href="#">описание релиза</a></p>
-                <button class="intro__slide-button slide-button slide-button--next"></button>
-                <button class="intro__slide-button slide-button slide-button--prev"></button>
+                <div class="intro__slide-button">
+                    <button class="slide-button intro__slide-button--up"></button>
+                    <button class="slide-button intro__slide-button--down slider-button--inactive"></button>
+                </div>
             </section>
         </div>
         <!-- Information -->
@@ -88,16 +92,23 @@
                         <li class="info__item">BIM-менеджера</li>
                         <li class="info__item">Студента / ВУЗ</li>
                         <li class="info__current-item">Renga для <span>Архитектора</span></li>
-                        <button class="info__slide-button slide-button slide-button--next"></button>
-                        <button class="info__slide-button slide-button slide-button--prev"></button>
+                        <div class="info__slide-button">
+                            <button class="slide-button info__slide-button--up info__slide-button--inactive"></button>
+                            <button class="slide-button info__slide-button--down"></button>
+                        </div>
                     </ul>
                     <div class="info__download">
-                        <p class="info__about">
-                            <span>Архитектор - это творец, который придумывает и проектирует здания, формирует городское пространство.</span>
-                            <a class="info__more">Подробнее</a>
-                        </p>
-                        <a class="info__button" href="#">Скачать</a>
-                        <a class="info__button info__button--opportunities" href="#">Возможности</a>
+                        <div class="info__about-wrapper">
+                            <img class="info__avatar" src="img/architect-with-helmet.png" width="126" height="126"/>
+                            <p class="info__about">
+                                <span>Архитектор &mdash; это творец, который придумывает и проектирует здания, формирует городское пространство.</span>
+                                <a class="info__more">Подробнее</a>
+                            </p>
+                        </div>
+                        <div class="info__buttons-wrapper">
+                            <a class="info__button" href="#">Скачать</a>
+                            <a class="info__button info__button--opportunities" href="#">Возможности</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -160,7 +171,7 @@
                         </ul>
                     </div>
                     <div class="page-footer__other-wrapper">
-                        <div class="page-footer__useful">
+                        <div class="page-footer__usefull">
                             <h2 class="page-footer__title">Полезное</h3>
                             <ul class="custom-list">
                                 <li><a href="#">Пользователю</a></li>
@@ -181,12 +192,12 @@
             </div>
         </div>
         <div class="page-footer__copyright container">
-            <p>
-                <img src="img/rengaSoftware_logo.png" width="191" height="34"/>
+            <p class="page-footer__copyright-item">
+                <img src="img/rengaSoftware_logo.png" width="191" height="34"/><br>
                 <span>Copyright (c) 2018 ООО “Ренга Софтвэр”</span>
             </p>
-            <p>
-                <img src="img/ascon-logo.png" width="106" height="30"/>
+            <p class="page-footer__copyright-item">
+                <img src="img/ascon-logo.png" width="106" height="30"/><br>
                 <span>Copyright (c) 2018 АСКОН</span>
             </p>
         </div>
