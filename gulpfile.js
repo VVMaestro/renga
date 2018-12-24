@@ -10,6 +10,15 @@ gulp.task("style", function () {
     .pipe(server.stream());
 });
 
+gulp.task("prefix", function () {
+  return gulp.src("source/css/style.css")
+    .pipe(plumber())
+    .pipe(postcss([
+      autoprefixer()
+    ]))
+    .pipe(gulp.dest("build/css"))
+});
+
 gulp.task("serve", function () {
   server.init({
     server: "source/"

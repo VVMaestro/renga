@@ -27,13 +27,13 @@
             </div>
         </section>
         <!-- Main Navigation -->
-        <section class="main-nav container">
+        <section class="main-nav container main-nav--opened">
             <h1 class="visually-hidden">Главное меню</h1>
             <div class="main-nav__wrapper">
                 <a class="logo main-nav__logo"><img src="img/header-logo.png" width="139" height="48" /></a>
                 <button class="main-nav__switch"></button>
             </div>
-            <ul class="main-nav__list custom-list main-nav__list--closed">
+            <ul class="main-nav__list custom-list">
                 <li class="main-nav__item main-nav__item--current"><a href="#">Продукты</a></li>
                 <li class="main-nav__item"><a href="#">События</a></li>
                 <li class="main-nav__item"><a href="#">О компании</a></li>
@@ -51,7 +51,9 @@
             <!-- Download -->
             <section class="download">
                 <h1 class="visually-hidden">Скачать</h1>
-                <img class="download__logo" src="img/download-logo.png" width="320" height="120"/>
+                <div class="download__logo">
+                    <img src="img/download-logo.png" width="320" height="120"/>
+                </div>
                 <p class="download__text">проектируй в 3D с архитектурно-строительной BIM-системой</p>
                 <div class="download__wrapper">
                     <a class="download__button" href="#">Скачать</a>
@@ -88,10 +90,11 @@
                         <li class="info__item">Конструктора</li>
                         <li class="info__item">Инженера</li>
                         <li class="info__item">Сметчика</li>
+                        <li class="info__item">Архитектора</li>
                         <li class="info__item">Руководителя</li>
                         <li class="info__item">BIM-менеджера</li>
                         <li class="info__item">Студента / ВУЗ</li>
-                        <li class="info__current-item">Renga для <span>Архитектора</span></li>
+                        <span class="info__current-item">Renga для </span>
                         <div class="info__slide-button">
                             <button class="slide-button info__slide-button--up info__slide-button--inactive"></button>
                             <button class="slide-button info__slide-button--down"></button>
@@ -102,7 +105,7 @@
                             <img class="info__avatar" src="img/architect-with-helmet.png" width="126" height="126"/>
                             <p class="info__about">
                                 <span>Архитектор &mdash; это творец, который придумывает и проектирует здания, формирует городское пространство.</span>
-                                <a class="info__more">Подробнее</a>
+                                <a class="info__more" href="#">Подробнее</a>
                             </p>
                         </div>
                         <div class="info__buttons-wrapper">
@@ -138,7 +141,7 @@
             </div>
             <div class="page-footer__column">
                 <div class="page-footer__socials">
-                    <h2 class="page-footer__title">Поддержка и общение</h3>
+                    <h2 class="page-footer__title">Поддержка и общение</h2>
                     <table>
                         <tr>
                             <td>VK</td>
@@ -172,7 +175,7 @@
                     </div>
                     <div class="page-footer__other-wrapper">
                         <div class="page-footer__usefull">
-                            <h2 class="page-footer__title">Полезное</h3>
+                            <h2 class="page-footer__title">Полезное</h2>
                             <ul class="custom-list">
                                 <li><a href="#">Пользователю</a></li>
                                 <li><a href="#">Разработчику</a></li>
